@@ -1,3 +1,5 @@
+TESTE DESENVOLVIDO EM JAVA 11
+
 1. Write a Java program to solve the following problem:
 You are tasked with creating a utility function for a text-processing application. The
 function must generate all possible anagrams from a given group of distinct letters. For
