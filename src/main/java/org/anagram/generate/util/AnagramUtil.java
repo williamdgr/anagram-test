@@ -16,6 +16,16 @@ public class AnagramUtil {
         return anagrams;
     }
 
+    /*
+    ---------------------------------- PARA EFEITO DO TESTE ---------------------------------------------------
+     Explicação do processamento:
+     Este método gera anagramas de forma recursiva e adiciona na lista passado por parêmetro.
+     Primeiro, ele percorre cada letra da palavra, pega uma letra por vez e coloca no comeco como sendo o prefixo.
+     Depois, remove essa letra do restante da palavra e chama o próprio método novamente, agora com a palavra reduzida e
+     com o novo prefixo. Isso continua acontecendo até que não sobrem mais letras para reorganizar.
+     Quando isso acontece, significa que uma nova combinação foi formada e é adicionada à lista de anagramas.
+     Esse processo se repete para todas as letras, garantindo que todas as combinações possíveis sejam criadas.
+     */
     private static void processAnagram(String input, String prefix, List<String> anagrams) {
         //Sempre que um anagrama for concluído, adiciono na lista senão processa a próxima letra
         if (input.isEmpty()) {
